@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d74d98370e6845d5b0732918ec38cc76" Name="Diagram1">
+        <EntityTypeShape EntityType="FYPDBModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Attempt_Log" Width="1.5" PointX="17.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Department" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Drop_Out" Width="1.5" PointX="12" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Enrolled" Width="1.5" PointX="15" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Exam" Width="1.5" PointX="9.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Option" Width="1.5" PointX="12" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Question" Width="1.5" PointX="9.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Result" Width="1.5" PointX="15" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Room" Width="1.5" PointX="9.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Schedule" Width="1.5" PointX="12" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Semester" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.Subject" Width="1.5" PointX="7.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYPDBModel.User" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <AssociationConnector Association="FYPDBModel.Attempt_Log_QuestionAttempt_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Attempt_Log_ScheduleAttempt_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Attempt_Log_UserAttempt_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Semester_DepartmentSemester" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Drop_Out_ExamDrop_Out" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Drop_Out_UserDrop_Out" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Enrolled_ExamEnrolled" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Enrolled_UserEnrolled" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Exam_SemesterExam" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Exam_SubjectExam" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Result_ExamResult" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Schedule_ExamSchedule" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Option_QuestionOptions" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Question_SubjectQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Result_UserResult" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Schedule_RoomSchedule" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.User_SemesterUser" ManuallyRouted="false" />
+        <AssociationConnector Association="FYPDBModel.Subject_UserSubject" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

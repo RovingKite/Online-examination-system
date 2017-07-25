@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Instructions";
+    Layout = "~/Views/Shared/Student_Master_page.cshtml";
+}
+
+<style>
+    font{
+        font-size:18px;
+    }
+</style>
+
+<script>
+   window.onload = function(){
+     var hou = 2;
+     var sec = 60;
+     setInterval(function(){
+
+       document.getElementById("timer").innerHTML = hou +" : " + sec ;
+       sec--;
+       if(sec == 00)
+       {
+         hou--;
+         sec = 60;
+         if (hou == 0)
+         {
+            hou = 2;
+         }
+       }
+      },500);
+    }
+</script>
+<div class="container" style="border: none; padding: 0px; border-radius: 4px;">
+    <div style="text-align:right;">
+        <span id="timer">05:00</span> minutes left!
+    </div>
+    <hr>
+    <div class="container" style="border: 1px solid silver; padding: 0px; border-radius: 4px;">
+        <div class="container-fluid" style="background-color: #F4F4F4; padding: 12px; border-radius: 4px;"><span class="glyphicon glyphicon-info-sign"></span>Instructions</div>
+        <br>
+        <div style="min-width: 1120px; max-width:1120px; overflow:hidden; text-overflow:ellipsis;">
+            <ul>
+                <li>
+                    <font>You are not allowed to communicate by word of mouth or otherwise with other candidates (this includes the time when answer scripts are being collected).</font>
+                </li>
+                <li>
+                    <font>Please raise your hand if you wish to communicate with an invigilator.</font>
+                </li>
+                <li>
+                    <font>Unless granted permission by an invigilator, you are not allowed to leave your seat.</font>
+                </li>
+                <li>
+                    <font>
+                        Once you have entered the examination hall, you will not be allowed to leave the hall until one hour
+                        after the examination has commenced.
+                    </font>
+                </li>
+                <li>
+                    <font>
+                        If, for any reason, you are given permission to leave the hall temporarily, you must be accompanied by an invigilator throughout your absence from the examination hall. You are required to leave
+                        your handphone on your desk when you leave the hall temporarily.
+                    </font>
+                </li>
+                <li>
+                    <font>
+                        Do not write on, mark, highlight or deface any reference materials provided for the examination. If found doing so, the reference materials will be removed from your use for the rest of the examination and you will be made to pay for the cost of the materials that have to be replaced.
+                    </font>
+                </li>
+                <li>
+                    <font>Once dismissed, you should leave the examination hall quickly and quietly. Remember to take your personal belongings with you. </font>
+                </li>
+                <li>
+                    <font>
+                        Bags etc must be placed according to the supervisor's instructions.
+                    </font>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-md-10"></div>
+                <div class="col-md-2">
+                    <button type="button" style="width:150px; height:45px;" class="btn btn-primary" onclick="location.href = '@Url.Action("Start_Exam", "Student")'"><span class="glyphicon glyphicon-forward"></span>Start Exam</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        </div>
+</div>
